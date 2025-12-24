@@ -16,7 +16,7 @@ availability_zones = [
 ec2_name       = "dev-ec2"
 ami_id         = "ami-068c0051b15cdb816"
 instance_type  = "t2.micro"
-key_name       = "my-key_pair_usa"
+key_name       = "my_key_pair_usa"
 
 ssh_allowed_cidrs = [
   "117.214.122.149/32"
