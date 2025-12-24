@@ -7,7 +7,13 @@ resource "aws_iam_policy" "ec2_full_access_custom" {
     Statement = [
       {
         Effect   = "Allow"
-        Action   = "ec2:*"
+        Action = [
+          "ec2:*",
+          "vpc:*",
+          "iam:PassRole",
+          "s3:*",
+          "dynamodb:*"
+        ]
         Resource = "*"
       }
     ]
