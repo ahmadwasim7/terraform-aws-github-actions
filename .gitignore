@@ -1,0 +1,3 @@
+bootstrap/backend/.terraform
+bootstrap/backend/.terraform.lock.hcl
+bootstrap/backend/terraform.tfstate*
