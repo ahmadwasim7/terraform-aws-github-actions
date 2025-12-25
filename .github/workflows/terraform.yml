@@ -1,7 +1,6 @@
 name: Terraform AWS CI/CD
 
 on:
-  workflow_dispatch:
   pull_request:
     branches:
       - master
@@ -44,7 +43,9 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
+        if: github.event_name == 'pull_request'
         run: terraform plan -no-color
 
       - name: Terraform Apply
+        if: github.event_name == 'push'
         run: terraform apply -auto-approve
