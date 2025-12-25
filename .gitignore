@@ -1,3 +1,11 @@
 bootstrap/backend/.terraform
 bootstrap/backend/.terraform.lock.hcl
 bootstrap/backend/terraform.tfstate*
+
+envs/dev/.terraform
+envs/dev/.terraform.lock.hcl
+envs/dev/terraform.tfstate*
+
+iam/github-actions/.terraform
+iam/github-actions/.terraform.lock.hcl
+iam/github-actions/terraform.tfstate*

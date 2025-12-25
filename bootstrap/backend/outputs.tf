@@ -5,7 +5,3 @@ output "state_bucket_name" {
 output "lock_table_name" {
   value = aws_dynamodb_table.terraform_locks.name
 }
-
-output "role_arn" {
-  value = aws_iam_role.github_actions_oidc.arn
-}
